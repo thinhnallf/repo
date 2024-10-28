@@ -1,7 +1,7 @@
 {
-    "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
+    "url": "https://raw.githubusercontent.com/thinhnallf/repo/refs/heads/main/xss.yaml",
     "urls": [{
-        "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
+        "url": "https://raw.githubusercontent.com/thinhnallf/repo/refs/heads/main/xss.yaml",
         "name": "Foo"
     }]
 }
