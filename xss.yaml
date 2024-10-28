@@ -1,34 +1,26 @@
 swagger: '2.0'
 info:
-  title: XSS Test
+  title: Classic API Resource Documentation
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
 
-  version: "1.0"
-
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
 paths:
-  /xss-test:
+  /accounts:
     get:
-      summary: "Endpoint vulnerable to XSS"
-      description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
-
       responses:
         '200':
-          description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
-
-  /xss/{id}:
-    get:
-      summary: "Path parameter vulnerable to XSS"
-      parameters:
-        - name: id
-          in: path
-          required: true
-          type: string
-          description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
-
-      responses:
-        '200':
-          description: "Success"
+          description: No response was specified
+      tags:
+        - accounts
+      operationId: findAccounts
+      summary: Finds all accounts
