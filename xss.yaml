@@ -1,0 +1,30 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "XSS Demo API",
+    "version": "1.0",
+    "description": "<script>alert('XSS Attack!');</script>"
+  },
+  "paths": {
+    "/example": {
+      "get": {
+        "summary": "Example endpoint",
+        "description": "<script>alert('XSS in endpoint description!');</script>",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "description": "<script>alert('XSS in response description!');</script>"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
