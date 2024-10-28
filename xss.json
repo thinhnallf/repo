@@ -3,8 +3,5 @@
     "urls": [{
         "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
         "name": "Foo"
-    },{
-        "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
-        "name": "Foo2"
     }]
 }
